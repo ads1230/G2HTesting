@@ -1,8 +1,8 @@
 # G2HTesting
 
 --- Add Extra Languages ---
-(Found in 2.0.9.0005.0509) 
 
+(Found in 2.0.9.0005.0509) 
 cp -r /sdcard/209 /tmp/upgrade/                   
 /tmp/upgrade/check_coor.sh                                                                          
 /tmp/upgrade/copy_files.sh                                                                      
