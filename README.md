@@ -7,7 +7,7 @@ cp -r /sdcard/upgrade /tmp/upgrade/
 /tmp/upgrade/check_coor.sh                                                                          
 /tmp/upgrade/copy_files.sh                                                                      
 rm -rf /tmp/upgrade                                          
-rm -f /sdcard/upgrade
+rm -rf /sdcard/upgrade
 
 --- Language Testing ---
 
