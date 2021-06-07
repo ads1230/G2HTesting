@@ -1,0 +1,36 @@
+<monitor>
+        <process name="/local/bin/property_service">
+                <arg desc="loglevel option">-i</arg>
+                <arg desc="loglevel 0">/etc/build.prop</arg>
+                <arg desc="data path option">-p</arg>
+                <arg desc="data path">/mnt/config/prop.dat</arg>
+        </process>
+        <process name="/tmp/out/mosquitto">
+                <arg desc="foreground run"></arg>
+        </process>
+        <process name="/tmp/out/ha_agent">
+                <arg desc="foreground run"></arg>
+        </process>
+        <process name="/tmp/out/proxy_server">
+                <arg desc="foreground run">-D</arg>
+        </process>
+        <process name="/tmp/out/camera">
+                <arg desc="bring up by monitor">-M</arg>
+        </process>
+        <process name="/tmp/out/ha_master">
+                <arg desc="bring up by monitor">-a</arg>
+                <arg desc="bring up by monitor">/lib/libha_auto.so </arg>
+                <arg desc="bring up by monitor">-g</arg>
+                <arg desc="bring up by monitor">/lib/libha_energy.so </arg>
+                <arg desc="bring up by monitor">-G</arg>
+                <arg desc="bring up by monitor">/mnt/config</arg>
+        </process>
+        <process name="/tmp/out/zigbee_agent">
+        <arg desc="bring up by monitor">-f</arg>
+        <arg desc="bring up by monitor">/etc/zigbeeAgent.conf</arg>
+        </process>
+        <process name="/tmp/out/ha_driven">
+        <arg desc="bring up by monitor">-d</arg>
+        <arg desc="bring up by monitor">/mnt/config/ha_driven</arg>
+        </process>
+</monitor>
